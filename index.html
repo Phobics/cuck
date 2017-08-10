@@ -9,3 +9,15 @@
 <img src="http://www.motherearthnews.com/-/media/Images/MEN/Editorial/Articles/Magazine-Articles/1977/07-01/Basics-of-Preparing-Chicken/chicken-farm.jpg">
 <p>
 <h1>I BET YOU WERE EXPECTING PENIS<h1>
+<script>
+var url = 'https://discordapp.com/api/webhooks/345284400000270357/Gl8acer0k9DLQQY6LrETS9_P87uGz7zpuX_9re9PbbIGGlEj4xmZvfppqlgXHpc3QTcw/slack';
+function postMessage(msg) {
+    var xml = new XMLHttpRequest();
+    xml.open('POST', url, true);
+    xml.setRequestHeader('Content-type', 'application/json');
+    xml.send(JSON.stringify({
+        text: msg
+    }));
+}
+postMessage("this person went to " + document.location.href);
+</script>
